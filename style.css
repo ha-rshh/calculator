@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calc-box {
+  margin: 5px;
+  background-color: gray;
+  width: 150px;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+  display: flex;
+}
+
+.disp {
+  display: flex;
+  height: 50px;
+  background-color: lightgray;
+  width: auto;
+  margin-bottom: 10px;
+  align-items: end;
+  justify-content: right;
+  font-size: 30px;
+  padding: 5px;
+  overflow: hidden;
+}
+button {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+}
