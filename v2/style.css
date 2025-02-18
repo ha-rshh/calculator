@@ -8,7 +8,7 @@
 .calc-box {
   margin: 30px;
   width: 300px;
-  height: 450px;
+  padding: 10px;
   background-color: grey;
   display: flex;
   align-items: center;
@@ -16,32 +16,29 @@
   border-radius: 10px;
 }
 .output {
-  width: 280px;
-  height: 100px;
-  background-color: lightgray;
-  margin: 10px 10px;
-  border-radius: 5px;
+  margin: 5px 0 ;
 }
-
-.output {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 10px;
-  word-wrap: break-word;
-  word-break: break-all;
+#previous-operand{
+  margin: 0;
+  font-size: 2em;
+  border-radius: 10px 10px 0px 0;
 }
-
-.output .previous-operand {
-  color: rgba(0, 0, 0, 0.599);
-  font-size: 1.5rem;
+#current-operand{
+  margin: 0;
+  font-size: 3em;
+  border-radius: 0 0 10px 10px;
 }
-
-.output .current-operand {
-  color: black;
-  font-size: 2.5rem;
+.output > input{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 0 10px;
+}
+.brand{
+  color: white;
+  margin-top: 4px;
+  text-align: center;
 }
 .calc-buttons {
   display: grid;
@@ -50,8 +47,10 @@
   gap: 5px;
 }
 .calc-buttons button{
+  cursor: pointer;
     border-radius: 10px;
     font-size: 20px;
+    
 }
 .span-two{
     grid-row: span 2;
